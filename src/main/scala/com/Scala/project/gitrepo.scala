@@ -7,6 +7,9 @@ object gitrepo {
       val spark = SparkSession.builder().appName("sairajApp").master("local").getOrCreate()
       val data = spark.read.option("header","true").csv("C:\\Users\\Aai\\OneDrive\\Desktop\\study\\spark-code-scala\\Emptable.csv")
       data.show()
+      data.createOrReplaceTempView("emp")
+      spark.sql("select Name from emp")
+      spark.sql("select city from emp") //local merge
   }
 
 }
