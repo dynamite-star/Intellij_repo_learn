@@ -14,6 +14,8 @@ object gitrepo {
       println("changes from stream2learn")
       println("code changes from stream2learn")//code changes by salikram-mate Account
       println("added more changes from stream2learn")//added more changes by salikram-mate Account
+
+      println("new change in feature1")
   }
 
 }
